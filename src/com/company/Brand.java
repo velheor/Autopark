@@ -1,7 +1,7 @@
 package com.company;
 
 
-public enum Kinds {
+public enum Brand {
     Audi("Audi"),
     Bentley ("Bentley"),
     BMW ("BMW"),
@@ -14,12 +14,12 @@ public enum Kinds {
     Volkswagen ("Volkswagen"),
     Volvo ("Volvo");
 
-    private String kinds;
+    private String brand;
 
-    Kinds(String kinds){
-        this.kinds= kinds;
+    Brand(String brand){
+        this.brand= brand;
     }
-    public String getString(String kinds){
-        return kinds;
+    public String getString(String brand){
+        return brand;
     }
 }

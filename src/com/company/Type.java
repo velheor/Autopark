@@ -1,8 +1,8 @@
 package com.company;
 
 public enum Type {
-    Electric("Electric"),
-    Gas("Gas");
+    Gas("Gas"),
+    Electric ("Electric");
 
     private String type;
 
