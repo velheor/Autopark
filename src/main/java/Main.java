@@ -5,8 +5,10 @@ public class Main {
     public static void main(String[] args) {
 
         List<Car> cars = new ArrayList<Car>();
-        Car car1 = new Car(Brand.Audi, Type.Coupe, 1337, 10, 2);
+
+        Car car1 = new Car(Brand.Fiat, Type.Coupe, 1337, 10, 2);
         Car car2 = new Car(Brand.BMW, Type.Convertible, 1773, 8, 3);
+
         cars.add(car1);
         cars.add(car2);
 
