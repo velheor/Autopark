@@ -20,11 +20,11 @@ public class Main {
 
         autoPark.sortByEconomy(cars);
 
-        for(Car auto:cars){
+        for (Car auto : cars) {
             auto.showInfo();
         }
 
-        for(Car auto :carBySpeed){
+        for (Car auto : carBySpeed) {
             auto.showInfo();
         }
     }
