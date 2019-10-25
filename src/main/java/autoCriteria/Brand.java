@@ -1,3 +1,4 @@
+package autoCriteria;
 
 public enum Brand {
     Audi("Audi"),

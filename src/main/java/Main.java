@@ -1,31 +1,36 @@
-import java.util.ArrayList;
+import auto.Car;
+import autoCriteria.Brand;
+import autoCriteria.Type;
+import logic.AutoPark;
+
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-
-        List<Car> cars = new ArrayList<Car>();
-
         Car car1 = new Car(Brand.Fiat, Type.Coupe, 1337, 10, 2);
         Car car2 = new Car(Brand.BMW, Type.Convertible, 1773, 8, 3);
 
-        cars.add(car1);
-        cars.add(car2);
 
         AutoPark autoPark = new AutoPark();
+        autoPark.addCar(car1);
+        autoPark.addCar(car2);
 
-        List<Car> carBySpeed = autoPark.searchBySpeed(cars, 1336, 1338);
+        List<Car> carBySpeed = autoPark.searchBySpeed(1336, 1338);
 
-        System.out.println(autoPark.calculateCarsCoast(cars));
+        System.out.println("Calculated autopark price");
+        System.out.println(autoPark.calculateCarsCoast());
 
-        autoPark.sortByEconomy(cars);
+        autoPark.sortByEconomy();
+        System.out.println("Sorted by economy");
 
-        for (Car auto : cars) {
+        for (Car auto : autoPark.getList()) {
             auto.showInfo();
         }
 
+        System.out.println("Found by speed");
         for (Car auto : carBySpeed) {
             auto.showInfo();
         }
     }
+
 }

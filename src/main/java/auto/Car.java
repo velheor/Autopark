@@ -1,3 +1,10 @@
+package auto;
+
+import autoCriteria.Brand;
+import autoCriteria.Type;
+
+import java.util.logging.Logger;
+
 
 public class Car {
     private Brand brand;
@@ -5,6 +12,8 @@ public class Car {
     private float maxSpeed;
     private float fuelConsumption;
     private float price;
+
+    private static final Logger LOGGER = Logger.getLogger(Car.class.getSimpleName());
 
     public Car(Brand brand, Type type, float maxSpeed, float fuelConsumption, float price) {
         this.brand = brand;

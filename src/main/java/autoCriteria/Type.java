@@ -1,3 +1,5 @@
+package autoCriteria;
+
 public enum Type {
     Convertible("Convertible"),
     Coupe("Coupe"),
