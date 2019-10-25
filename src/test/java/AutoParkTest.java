@@ -13,7 +13,6 @@ import static org.junit.Assert.assertEquals;
 public class AutoParkTest {
     @Parameterized.Parameter
     AutoPark autoPark = new AutoPark();
-    List<Car> cars = new ArrayList<Car>();
     Car car1 = new Car(Brand.Audi, Type.Coupe, 210, 10, 2);
     Car car2 = new Car(Brand.BMW, Type.Convertible, 1, 8, 3);
 
