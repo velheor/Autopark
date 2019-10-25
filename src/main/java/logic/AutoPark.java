@@ -34,6 +34,7 @@ public class AutoPark {
     public List<Car> sortByEconomy() {
         List<Car> sortedCards = new ArrayList<>(this.cars);
         Collections.sort(sortedCards, Comparator.comparing(Car::getFuelConsumption));
+        LOGGER.info("Sorted by economy");
         return sortedCards;
     }
 
@@ -44,6 +45,7 @@ public class AutoPark {
                 carSelection.add(car);
             }
         }
+        LOGGER.info("Sorted by speed selection");
         return carSelection;
     }
 }
