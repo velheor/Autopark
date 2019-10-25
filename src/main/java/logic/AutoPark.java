@@ -1,21 +1,25 @@
 package logic;
 
 import auto.Car;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.logging.Logger;
 
 
 public class AutoPark {
+    private static final Logger LOGGER = Logger.getLogger(AutoPark.class.getSimpleName());
     private List<Car> cars = new ArrayList<Car>();
 
-    public List<Car> getList(){
+    public List<Car> getList() {
         return cars;
     }
 
-    public void addCar(Car car){
+    public void addCar(Car car) {
         this.cars.add(car);
+        LOGGER.info("Car added");
     }
 
     public float calculateCarsCoast() {
@@ -23,12 +27,14 @@ public class AutoPark {
         for (Car car : cars) {
             sum = sum + car.getPrice();
         }
+        LOGGER.info("Calculated autopark price");
         return sum;
     }
 
     public List<Car> sortByEconomy() {
-        Collections.sort(cars, Comparator.comparing(Car::getFuelConsumption));
-        return cars;
+        List<Car> sortedCards = new ArrayList<>(this.cars);
+        Collections.sort(sortedCards, Comparator.comparing(Car::getFuelConsumption));
+        return sortedCards;
     }
 
     public List<Car> searchBySpeed(float min, float max) {

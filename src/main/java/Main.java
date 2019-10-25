@@ -10,8 +10,8 @@ public class Main {
         Car car1 = new Car(Brand.Fiat, Type.Coupe, 1337, 10, 2);
         Car car2 = new Car(Brand.BMW, Type.Convertible, 1773, 8, 3);
 
-
         AutoPark autoPark = new AutoPark();
+
         autoPark.addCar(car1);
         autoPark.addCar(car2);
 
