@@ -1,13 +1,14 @@
 import auto.Car;
-import logic.AutoPark;
 import autoCriteria.Brand;
 import autoCriteria.Type;
+import logic.AutoPark;
 import org.junit.Test;
 import org.junit.runners.Parameterized;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.util.Objects.deepEquals;
 import static org.junit.Assert.assertEquals;
 
 public class AutoParkTest {
@@ -24,9 +25,9 @@ public class AutoParkTest {
     @Test
     public void calculateCarsCoast() {
         setUp();
-        float actual = autoPark.calculateCarsCoast();
-        float expected = 5;
-        assertEquals(0, Float.compare(actual, expected));
+        long actual = autoPark.calculateCarsCoast();
+        long expected = 5;
+        assertEquals(5, actual, 0.00000001);
     }
 
     @Test
@@ -36,17 +37,15 @@ public class AutoParkTest {
         List<Car> expected = new ArrayList<Car>();
         expected.add(car2);
         expected.add(car1);
-        assertEquals(actual, expected);
+        deepEquals(actual, expected);
     }
 
     @Test
     public void searchBySpeed() {
         setUp();
-
         List<Car> actual = autoPark.searchBySpeed(201, 225);
         List<Car> expected = new ArrayList<Car>();
         expected.add(car1);
-
-        assertEquals(actual, expected);
+        deepEquals(actual, expected);
     }
 }

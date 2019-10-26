@@ -1,51 +1,48 @@
 package logic;
 
 import auto.Car;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.logging.Logger;
 
 
 public class AutoPark {
-    private static final Logger LOGGER = Logger.getLogger(AutoPark.class.getSimpleName());
+    private static final Logger logger = LogManager.getLogger(AutoPark.class);
     private List<Car> cars = new ArrayList<Car>();
 
-    public List<Car> getList() {
-        return cars;
-    }
-
     public void addCar(Car car) {
+        logger.info("Car added");
         this.cars.add(car);
-        LOGGER.info("Car added");
     }
 
-    public float calculateCarsCoast() {
-        float sum = 0;
+    public long calculateCarsCoast() {
+        logger.info("Calculated autopark price");
+        long sum = 0;
         for (Car car : cars) {
             sum = sum + car.getPrice();
         }
-        LOGGER.info("Calculated autopark price");
         return sum;
     }
 
     public List<Car> sortByEconomy() {
+        logger.info("Sorted by economy");
         List<Car> sortedCards = new ArrayList<>(this.cars);
         Collections.sort(sortedCards, Comparator.comparing(Car::getFuelConsumption));
-        LOGGER.info("Sorted by economy");
         return sortedCards;
     }
 
     public List<Car> searchBySpeed(float min, float max) {
+        logger.info("Sorted by speed selection");
         List<Car> carSelection = new ArrayList<Car>();
         for (Car car : cars) {
             if (car.getMaxSpeed() >= min && car.getMaxSpeed() <= max) {
                 carSelection.add(car);
             }
         }
-        LOGGER.info("Sorted by speed selection");
         return carSelection;
     }
 }

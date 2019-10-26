@@ -9,13 +9,13 @@ import java.util.logging.Logger;
 public class Car {
     private Brand brand;
     private Type type;
-    private float maxSpeed;
-    private float fuelConsumption;
-    private float price;
+    private long maxSpeed;
+    private long fuelConsumption;
+    private long price;
 
     private static final Logger LOGGER = Logger.getLogger(Car.class.getSimpleName());
 
-    public Car(Brand brand, Type type, float maxSpeed, float fuelConsumption, float price) {
+    public Car(Brand brand, Type type, long maxSpeed, long fuelConsumption, long price) {
         this.brand = brand;
         this.type = type;
         this.maxSpeed = maxSpeed;
@@ -23,15 +23,15 @@ public class Car {
         this.price = price;
     }
 
-    public float getPrice() {
+    public long getPrice() {
         return price;
     }
 
-    public float getFuelConsumption() {
+    public long getFuelConsumption() {
         return fuelConsumption;
     }
 
-    public float getMaxSpeed() {
+    public long getMaxSpeed() {
         return maxSpeed;
     }
 
