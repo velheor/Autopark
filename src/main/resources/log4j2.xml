@@ -8,10 +8,10 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="logic.AutoPark" level="INFO">
+        <Logger name="autoPark.AutoPark" level="INFO">
             <AppenderRef ref="FILE"/>
         </Logger>
-        <Logger name="logic.AutoPark" level="INFO">
+        <Logger name="autoPark.AutoPark" level="INFO">
             <AppenderRef ref="STDOUT"/>
         </Logger>
         <Root level="info">

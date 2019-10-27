@@ -1,26 +1,36 @@
 import auto.Car;
+import auto.ElectricCar;
+import auto.GasCar;
 import autoCriteria.Brand;
+import autoCriteria.FuelType;
 import autoCriteria.Type;
-import logic.AutoPark;
+import autoPark.AutoPark;
 
 public class Main {
     public static void main(String[] args) {
-        Car car1 = new Car(Brand.Fiat, Type.Coupe, 1337, 10, 2);
-        Car car2 = new Car(Brand.BMW, Type.Convertible, 1773, 8, 3);
-        Car car3 = new Car(Brand.Dodge, Type.Sedun, 1773, 1, 1);
+        GasCar gasCar1 = new GasCar(Brand.Citroen,Type.Convertible,228, 1, FuelType.Petrol, 10);
+        ElectricCar electricCar1 = new ElectricCar(Brand.Audi, Type.Hatchback, 1336, 2,10,15);
+        GasCar gasCar2 = new GasCar(Brand.Bentley,Type.Sedun,47, 3, FuelType.Diesel, 15);
+        ElectricCar electricCar2 = new ElectricCar(Brand.Geely, Type.Van, 33, 5,6,100);
 
         AutoPark autoPark = new AutoPark();
 
-        autoPark.addCar(car1);
-        autoPark.addCar(car3);
-        autoPark.addCar(car2);
+        autoPark.addAutoParkCar(gasCar1);
+        autoPark.addAutoParkCar(gasCar2);
+        autoPark.addAutoParkCar(electricCar1);
+        autoPark.addAutoParkCar(electricCar2);
 
         System.out.println("Calculated autopark price");
         System.out.println(autoPark.calculateCarsCoast());
 
 
-        System.out.println("Sorted by economy");
-        for (Car auto : autoPark.sortByEconomy()) {
+        System.out.println("Sorted by FuelConsumption");
+        for (GasCar auto : autoPark.sortByFuelConsumption()) {
+            auto.showInfo();
+        }
+
+        System.out.println("Sorted by lifeTimeBattery");
+        for (ElectricCar auto : autoPark.sortLifeTimeBattery()) {
             auto.showInfo();
         }
 
@@ -29,5 +39,4 @@ public class Main {
             auto.showInfo();
         }
     }
-
 }

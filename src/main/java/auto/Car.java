@@ -15,11 +15,10 @@ public class Car {
 
     private static final Logger LOGGER = Logger.getLogger(Car.class.getSimpleName());
 
-    public Car(Brand brand, Type type, long maxSpeed, long fuelConsumption, long price) {
+    public Car(Brand brand, Type type, long maxSpeed, long price) {
         this.brand = brand;
         this.type = type;
         this.maxSpeed = maxSpeed;
-        this.fuelConsumption = fuelConsumption;
         this.price = price;
     }
 
@@ -27,9 +26,7 @@ public class Car {
         return price;
     }
 
-    public long getFuelConsumption() {
-        return fuelConsumption;
-    }
+
 
     public long getMaxSpeed() {
         return maxSpeed;
