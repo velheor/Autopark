@@ -3,17 +3,12 @@ package auto;
 import autoCriteria.Brand;
 import autoCriteria.Type;
 
-import java.util.logging.Logger;
-
 
 public class Car {
     private Brand brand;
     private Type type;
     private long maxSpeed;
-    private long fuelConsumption;
     private long price;
-
-    private static final Logger LOGGER = Logger.getLogger(Car.class.getSimpleName());
 
     public Car(Brand brand, Type type, long maxSpeed, long price) {
         this.brand = brand;
@@ -26,14 +21,12 @@ public class Car {
         return price;
     }
 
-
-
     public long getMaxSpeed() {
         return maxSpeed;
     }
 
-    public void showInfo() {
-        System.out.println(this.brand + ", " + this.type + ", " + this.maxSpeed + ", " + this.fuelConsumption + ", " + this.price);
+    public String showInfo() {
+        return (this.brand + ", " + this.type + ", "+ "Max speed: " + this.maxSpeed + ", "+"Price: " + this.price);
     }
 }
 

@@ -35,7 +35,7 @@ public class AutoParkTest {
         setUp();
         long actual = autoPark.calculateCarsCoast();
         long expected = 11;
-        assertEquals(5, actual, 0.00000001);
+        assertEquals(expected, actual, 0.00000001);
     }
 
     @Test

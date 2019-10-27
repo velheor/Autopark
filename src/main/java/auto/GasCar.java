@@ -10,9 +10,15 @@ public class GasCar extends Car {
 
     public GasCar(Brand brand, Type type, long maxSpeed, long price, FuelType fuelType, long fuelConsumption) {
         super(brand, type, maxSpeed, price);
+        this.fuelType = fuelType;
+        this.fuelConsumption = fuelConsumption;
     }
 
     public long getFuelConsumption() {
         return fuelConsumption;
+    }
+
+    public void showInfoGasCar() {
+        System.out.println(showInfo() + ", " + "FuelType: "+ this.fuelType + ", "+"FuelConsumption" + this.fuelConsumption);
     }
 }

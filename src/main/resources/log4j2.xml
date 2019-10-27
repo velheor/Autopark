@@ -1,6 +1,6 @@
 <Configuration status="info">
     <Appenders>
-        <File name="Epam" fileName="output.log">
+        <File name="epam" fileName="output.log">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </File>
         <Console name="STDOUT" target="SYSTEM_OUT">
@@ -9,13 +9,10 @@
     </Appenders>
     <Loggers>
         <Logger name="autoPark.AutoPark" level="INFO">
-            <AppenderRef ref="FILE"/>
-        </Logger>
-        <Logger name="autoPark.AutoPark" level="INFO">
             <AppenderRef ref="STDOUT"/>
         </Logger>
         <Root level="info">
-            <AppenderRef ref="STDOUT"/>
+            <AppenderRef ref="epam"/>
         </Root>
     </Loggers>
 </Configuration>

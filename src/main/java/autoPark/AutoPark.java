@@ -18,7 +18,7 @@ public class AutoPark {
     private List<GasCar> gasCars = new ArrayList<GasCar>();
     private List<ElectricCar> electricCars = new ArrayList<ElectricCar>();
 
-    public void addAutoParkCar(Car car){
+    public void addAutoParkCar(Car car) {
         logger.info("Car added to autoPark");
         this.autoPark.add(car);
     }
