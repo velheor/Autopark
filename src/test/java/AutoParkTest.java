@@ -5,7 +5,7 @@ import autoCriteria.Brand;
 import autoCriteria.FuelType;
 import autoCriteria.Type;
 import autoPark.AutoPark;
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -15,14 +15,14 @@ import static java.util.Objects.deepEquals;
 import static org.junit.Assert.assertEquals;
 
 public class AutoParkTest {
-    static AutoPark autoPark = new AutoPark();
-    static GasCar gasCar1;
-    static GasCar gasCar2;
-    static ElectricCar electricCar1;
-    static ElectricCar electricCar2;
+    private AutoPark autoPark = new AutoPark();
+    private GasCar gasCar1;
+    private GasCar gasCar2;
+    private ElectricCar electricCar1;
+    private ElectricCar electricCar2;
 
-    @BeforeClass
-    public static void setUp() {
+    @Before
+    public void setUp() {
         gasCar1 = new GasCar(Brand.Citroen, Type.Convertible, 228, 1, FuelType.Petrol, 10);
         electricCar1 = new ElectricCar(Brand.Audi, Type.Hatchback, 1336, 2, 10, 15);
         gasCar2 = new GasCar(Brand.Bentley, Type.Sedun, 47, 3, FuelType.Diesel, 15);

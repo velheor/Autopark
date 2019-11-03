@@ -1,44 +1,32 @@
-18:17:21.132 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:17:21.140 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:17:21.140 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:17:21.140 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:17:21.144 [main] INFO  autoPark.AutoPark - Calculated autopark price
-18:17:21.149 [main] INFO  autoPark.AutoPark - Sorted by lifeTimeBattery
-18:17:21.163 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:17:21.163 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:17:21.165 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:17:21.166 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:17:21.170 [main] INFO  autoPark.AutoPark - Sorted by speed selection
-18:17:21.172 [main] INFO  autoPark.AutoPark - Sorted by FuelConsumption
-18:18:34.043 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:18:34.049 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:18:34.050 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:18:34.050 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:18:34.054 [main] INFO  autoPark.AutoPark - Calculated autopark price
-18:18:34.055 [main] INFO  autoPark.AutoPark - Sorted by lifeTimeBattery
-18:18:34.063 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:18:34.067 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:18:34.067 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:18:34.069 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:18:34.070 [main] INFO  autoPark.AutoPark - Sorted by speed selection
-18:18:34.070 [main] INFO  autoPark.AutoPark - Sorted by FuelConsumption
-18:19:35.901 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:19:35.903 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:19:35.903 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:19:35.907 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:19:35.909 [main] INFO  autoPark.AutoPark - Calculated autopark price
-18:19:35.909 [main] INFO  autoPark.AutoPark - Sorted by lifeTimeBattery
-18:19:35.916 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:19:35.916 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:19:35.920 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:19:35.920 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:19:35.921 [main] INFO  autoPark.AutoPark - Sorted by speed selection
-18:19:35.922 [main] INFO  autoPark.AutoPark - Sorted by FuelConsumption
-18:20:08.296 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:20:08.300 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:20:08.300 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:20:08.300 [main] INFO  autoPark.AutoPark - Car added to autoPark
-18:20:08.304 [main] INFO  autoPark.AutoPark - Calculated autopark price
-18:20:08.310 [main] INFO  autoPark.AutoPark - Sorted by lifeTimeBattery
-18:20:08.322 [main] INFO  autoPark.AutoPark - Sorted by speed selection
-18:20:08.327 [main] INFO  autoPark.AutoPark - Sorted by FuelConsumption
+20:24:59.198 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:24:59.201 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:24:59.202 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:24:59.202 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:24:59.202 [main] INFO  autoPark.AutoPark - GasCar added
+20:24:59.202 [main] INFO  autoPark.AutoPark - GasCar added
+20:24:59.203 [main] INFO  autoPark.AutoPark - ElectricCar added
+20:24:59.203 [main] INFO  autoPark.AutoPark - ElectricCar added
+20:24:59.204 [main] INFO  autoPark.AutoPark - Calculated autopark price
+20:24:59.205 [main] INFO  autoPark.AutoPark - Sorted by FuelConsumption
+20:24:59.208 [main] INFO  autoPark.AutoPark - Sorted by lifeTimeBattery
+20:24:59.209 [main] INFO  autoPark.AutoPark - Sorted by speed selection
+20:27:19.847 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.853 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.854 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.855 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.855 [main] INFO  autoPark.AutoPark - Calculated autopark price
+20:27:19.858 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.858 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.859 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.859 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.860 [main] INFO  autoPark.AutoPark - Sorted by lifeTimeBattery
+20:27:19.865 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.865 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.866 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.867 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.867 [main] INFO  autoPark.AutoPark - Sorted by speed selection
+20:27:19.869 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.869 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.870 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.870 [main] INFO  autoPark.AutoPark - Car added to autoPark
+20:27:19.871 [main] INFO  autoPark.AutoPark - Sorted by FuelConsumption
